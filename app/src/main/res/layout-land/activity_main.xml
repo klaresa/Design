@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/greylightColor"
+    android:padding="@dimen/padding_55dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/padding_55dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/greyColor"
+            android:fontFamily="monospace"
+            android:onClick="showToast"
+            android:text="@string/toast"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="@dimen/padding_10dp"/>
+
+        <Button
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/greyColor"
+            android:fontFamily="monospace"
+            android:onClick="showCount"
+            android:text="@string/count"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menssage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:onClick="deletar"
+        android:text="@string/zero"
+        android:textColor="@color/colorWhite"
+        android:textSize="60sp" />
+
+</LinearLayout>
+
